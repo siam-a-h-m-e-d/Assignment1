@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 22px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+
+.headline{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 25, 32);
+    color: white;
+    text-transform: uppercase;
+}
+.about,.works{
+    display: flex;
+    justify-content: center;
+}
+.personalInfo, .personalWorks{
+    width: 100%;
+    background-color: rgb(255,229,204);
+    margin: 40px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.personalInfo .image{
+    width: 170px;
+    margin: 20px auto;
+    height: 170px;
+    background-image: url(image/img.jpg);
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: -100px -40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px;
+}
+
+@media only screen and (min-width:700px){
+    .personal{
+        display: flex;    
+    }
+    .personalInfo .image{
+        margin: 0;
+        margin-right: 30px;
+        border-radius: 0;
+        width: 170px;
+        height: 200px;
+    }
+    .personalInfo .data{
+        margin-left: 30px;
+    }
+    .personalInfo{
+        align-items: center;
+    }
+    .about, .works{
+        height: 100vh;
+    }
+}
+
+footer{
+    height: 200px;
+    background-color: rgb(102, 25, 32);
+    border-top: 2px solid rgb(255,229,204);
+    color: rgb(255,229,204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
